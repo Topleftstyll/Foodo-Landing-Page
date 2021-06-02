@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -13,4 +14,165 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+/* Header Background */
+.background {
+  background-image: url(../public/assets/bg.png);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+}
+
+.texture {
+  background-image: url(../public/assets/texture.png);
+  background-attachment: fixed;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.container-top {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: 30px !important;
+  margin-right: 10px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-top {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
+
+.section-top {
+  min-width: 90vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-top-right {
+  background-color: rgba(255, 255, 255, 0.365);
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.section-top-right h2 {
+  font-weight: 600;
+}
+
+.section-top-right h1 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+
+.section-top-right h6 {
+  font-weight: 700;
+  color: brown;
+  letter-spacing: 10px;
+}
+
+.btn-custom {
+  background-color: tomato;
+  color: white;
+}
+
+.btn-custom:hover {
+  color: white;
+  opacity: .8;
+}
+
+/* Service */
+.service-container-bg {
+  background-color: white;
+  padding-top: 100px;
+}
+
+.col-container {
+  text-align: center;
+}
+.col-container p {
+  text-align: left;
+}
+
+.col-container h2 {
+  text-align: left;
+}
+
+.service-container {
+  min-height: 50vh;
+}
+
+.service-img {
+  text-align: center;
+  width: 200px;
+}
+
+/* About */
+.about-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Download */
+.download-container-bg {
+  background-color: white;
+}
+
+.download-container {
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.img-download img {
+  width: 150px;
+}
+
+/* Contact */
+.contact-component {
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container-bg {
+  background-color: rgb(255, 214, 175);
+}
+.fa {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: rgb(43, 31, 20);
+  color: white;
+  min-height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
